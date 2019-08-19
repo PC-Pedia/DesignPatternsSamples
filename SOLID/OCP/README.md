@@ -1,4 +1,5 @@
 # Open Closed Principle
+Closed for Modification but Open for Extentsion
 
 ### O in SOLID
 
