@@ -1,4 +1,4 @@
-# Single Responsibility Principal
+# Single Responsibility Principle
 
 ### S in SOLID
 
