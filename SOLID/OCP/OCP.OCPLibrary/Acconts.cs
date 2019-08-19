@@ -8,7 +8,13 @@ namespace OCP.OCPLibrary
     {
         public EmployeeModel Create(PersonModel person)
         {
-            throw new NotImplementedException();
+            EmployeeModel output = new EmployeeModel();
+
+            output.FirstName = person.FirstName;
+            output.LastName = person.LastName;
+            output.EmailAddress = $"{person.FirstName.Substring(0, 1)}{person.LastName}@sample.com";
+
+            return output;
         }
     }
 }

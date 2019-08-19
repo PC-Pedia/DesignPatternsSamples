@@ -1,7 +1,7 @@
 # Design Patterns Samples
 Desing Patterns sample in C#
 
-## SOLID Principals
+## SOLID Principle
 
-* [S] - Single Resposibility Principal
-* [O] - Open Close Principal
+* [S] - [Single Resposibility Principles](SOLID/SRP)
+* [O] - [Open Close Principle](SOLID/OCP)

@@ -18,6 +18,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OCP", "OCP", "{05B863B3-4518-4D71-BA56-FF0FA66EC35C}"
+	ProjectSection(SolutionItems) = preProject
+		SOLID\OCP\README.md = SOLID\OCP\README.md
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OCP.ConsoleUI", "SOLID\OCP\OCP.ConsoleUI\OCP.ConsoleUI.csproj", "{31ED9917-4CDC-49E8-BA50-E11AB1864C91}"
 EndProject
