@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace SRP.ConsoleUI
+namespace SOLID.SRP.ConsoleUI
 {
     public class Person
     {
