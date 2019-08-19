@@ -8,24 +8,25 @@ namespace OCP.ConsoleUI
     {
         static void Main(string[] args)
         {
-            List<PersonModel> applicants = new List<PersonModel>
+            List<IApplicantModel> applicants = new List<IApplicantModel>
             {
                 new PersonModel{ FirstName = "Mehdi", LastName = "Khosravi" },
-                new PersonModel{ FirstName = "Ali" , LastName = "Moghaddam" },
-                new PersonModel{ FirstName = "Amir" , LastName = "Farahmehr" },
+                new ManagerModel{ FirstName = "Ali" , LastName = "Moghaddam" },
+                new ExecutiveModel{ FirstName = "Amir" , LastName = "Farahmehr" },
             };
 
             List<EmployeeModel> employees = new List<EmployeeModel>();
-            Acconts accontProcessor = new Acconts();
+            Accounts accontProcessor = new Accounts();
 
             foreach (var person in applicants)
             {
-                employees.Add(accontProcessor.Create(person));
+                employees.Add(person.AccountProcessor.Create(person));
             }
 
             foreach (var emp in employees)
             {
-                Console.WriteLine($"{emp.FirstName} {emp.LastName} {emp.EmailAddress}");
+                Console.WriteLine($"{emp.FirstName} {emp.LastName}: {emp.EmailAddress} " +
+                    $"IsManager: {emp.IsManager} IsExecutive: {emp.IsExecutive}");
             }
 
             Console.ReadLine();
